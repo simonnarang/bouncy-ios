@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,53 +19,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bouncy" translatesAutoresizingMaskIntoConstraints="NO" id="x39-3g-FB4">
-                                <rect key="frame" x="123" y="169" width="128" height="128"/>
+                                <rect key="frame" x="123" y="169" width="129" height="128"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="x39-3g-FB4" secondAttribute="height" multiplier="1:1" id="Gz1-Le-LV7"/>
-                                    <constraint firstAttribute="height" constant="128" id="zC7-gY-Oah"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Simon Narang" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpG-8d-bJr">
-                                <rect key="frame" x="16" y="589" width="343" height="58"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
-                                <color key="textColor" red="0.23956030610000001" green="0.47055637839999997" blue="0.84876042600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Simon Narang" translatesAutoresizingMaskIntoConstraints="NO" id="Exg-7C-ijo">
-                                <rect key="frame" x="159" y="525" width="56" height="56"/>
-                                <color key="backgroundColor" red="0.44834874159999999" green="0.66665639499999996" blue="0.74985832259999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Exg-7C-ijo" secondAttribute="height" multiplier="1:1" id="MV9-wA-jBg"/>
-                                    <constraint firstAttribute="height" constant="56" id="Tgl-tO-Yw9"/>
+                                    <constraint firstAttribute="width" secondItem="x39-3g-FB4" secondAttribute="height" multiplier="129:128" id="Ipz-6X-SUg"/>
+                                    <constraint firstAttribute="height" constant="128" id="Khm-g8-S8i"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bouncy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtK-NU-LxO">
-                                <rect key="frame" x="73" y="296" width="228" height="75"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="f0R-n8-KZ7"/>
-                                </constraints>
+                                <rect key="frame" x="73" y="296" width="229" height="75"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                 <color key="textColor" red="0.23956030607223511" green="0.47055637836456299" blue="0.84876042604446411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.78873413801193237" green="0.85225468873977661" blue="0.95569950342178345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="1" height="2"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="| Simon ❦Narang |" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpG-8d-bJr">
+                                <rect key="frame" x="102.5" y="596" width="170.5" height="51"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="15"/>
+                                <color key="textColor" red="0.23956030610000001" green="0.47055637839999997" blue="0.84876042600000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="x39-3g-FB4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="149" id="6zR-Tn-5Z4"/>
-                            <constraint firstItem="gtK-NU-LxO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="HRg-YK-Ljg"/>
-                            <constraint firstItem="cpG-8d-bJr" firstAttribute="top" secondItem="Exg-7C-ijo" secondAttribute="bottom" constant="8" symbolic="YES" id="Iis-7g-Jtx"/>
-                            <constraint firstItem="cpG-8d-bJr" firstAttribute="centerX" secondItem="Exg-7C-ijo" secondAttribute="centerX" id="Jki-rS-uqP"/>
-                            <constraint firstItem="Exg-7C-ijo" firstAttribute="centerX" secondItem="x39-3g-FB4" secondAttribute="centerX" id="Q17-oV-I9A"/>
-                            <constraint firstItem="cpG-8d-bJr" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="QJv-cH-cxJ"/>
-                            <constraint firstItem="Exg-7C-ijo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Ypf-nO-h6T"/>
-                            <constraint firstAttribute="bottom" secondItem="Exg-7C-ijo" secondAttribute="bottom" constant="86" id="bSV-Dc-gRW"/>
-                            <constraint firstItem="gtK-NU-LxO" firstAttribute="top" secondItem="x39-3g-FB4" secondAttribute="bottom" constant="-1" id="eV3-PZ-ER9"/>
-                            <constraint firstAttribute="bottom" secondItem="cpG-8d-bJr" secondAttribute="bottom" constant="20" symbolic="YES" id="qbV-FT-kCX"/>
-                            <constraint firstItem="x39-3g-FB4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="viq-eb-kgs"/>
-                            <constraint firstItem="Exg-7C-ijo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="159" id="weP-rW-Ly8"/>
-                            <constraint firstItem="gtK-NU-LxO" firstAttribute="centerX" secondItem="x39-3g-FB4" secondAttribute="centerX" id="xNA-h4-Zfe"/>
+                            <constraint firstItem="x39-3g-FB4" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="N4t-qD-K0s"/>
+                            <constraint firstItem="gtK-NU-LxO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="276" id="OzJ-wt-ayx"/>
+                            <constraint firstItem="gtK-NU-LxO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="73" id="Tvd-AB-w28"/>
+                            <constraint firstItem="gtK-NU-LxO" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="X2y-Cp-u1G"/>
+                            <constraint firstItem="gtK-NU-LxO" firstAttribute="centerX" secondItem="cpG-8d-bJr" secondAttribute="centerX" id="pGM-Xx-Rbm"/>
+                            <constraint firstItem="x39-3g-FB4" firstAttribute="centerX" secondItem="gtK-NU-LxO" secondAttribute="centerX" id="pbE-TS-Rzy"/>
+                            <constraint firstItem="x39-3g-FB4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="qNl-dw-p0n"/>
+                            <constraint firstAttribute="bottom" secondItem="cpG-8d-bJr" secondAttribute="bottom" constant="20" symbolic="YES" id="xFP-Sn-8zc"/>
+                            <constraint firstItem="x39-3g-FB4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="149" id="zA5-ve-LIQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -77,7 +61,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Bouncy" width="512" height="512"/>
-        <image name="Simon Narang" width="152" height="152"/>
+        <image name="Bouncy" width="1024" height="1024"/>
     </resources>
 </document>

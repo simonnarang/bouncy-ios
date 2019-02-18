@@ -19,14 +19,13 @@ class GameViewController: UIViewController {
             view.showsFPS = false
             view.showsNodeCount = false
             // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFill
-                scene.backgroundColor = SKColor(red: 1, green: 0.97, blue: 0.1, alpha: 1.00)
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
+            let scene = GameScene()
+            print("this worked....")
+            scene.scaleMode = .resizeFill
+            scene.backgroundColor = SKColor(red: 0.97, green: 0.97, blue: 0.97, alpha: 1.00)
+            
+            // Present the scene
+            view.presentScene(scene)
             
             view.ignoresSiblingOrder = true
         }

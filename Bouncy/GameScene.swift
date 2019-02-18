@@ -11,6 +11,8 @@ import GameplayKit
 import Darwin
 
 class GameScene: SKScene {
+    
+    let welcomeString = "Welcome to Bouncy. To play, tap in the upper portion of your screen to drop a ball and try to get it in the moving hole. If you find the current playing field to be too easy or too hard, just restart the app and a new, unique field will be randomly generated!"
         
         // Array of colors to match WWDC theme
         let wwdcColors = [
@@ -29,8 +31,17 @@ class GameScene: SKScene {
         // Set up scene
         override func didMove(to view: SKView) {
             
-            print("Welcome 👋 Your goal is to drop a ball into the hole at the bottom. Good luck!")
-            print("If it's too hard or too easy, rerun this playground to generate a new and unique scene!")
+            if UserDefaults.isFirstLaunch() {
+                let alert = UIAlertController(title: "Howdy!", message: welcomeString, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Let's Go!", style: .default, handler: { action in
+                    switch action.style {
+                    case .default: print("default")
+                    case .cancel: print("cancel")
+                    case .destructive: print("destructive")
+                    }
+                }))
+                view.window?.rootViewController?.present(alert, animated: true, completion: nil)
+            }
             
             /*
              Set gravity of scene to be -9.7
@@ -138,7 +149,21 @@ class GameScene: SKScene {
             } else {
                 
                 // If user tries to drop ball from too low, remind them to drop the ball from higher up
-                print("Nice try! You need to drop the ball from higher up 😜")
+                let alert = UIAlertController(title: "Nice Try!", message: "You need to drop the ball from higher up 😜", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                    switch action.style{
+                    case .default:
+                        print("default")
+                        
+                    case .cancel:
+                        print("cancel")
+                        
+                    case .destructive:
+                        print("destructive")
+                        
+                        
+                    }}))
+                view?.window?.rootViewController?.present(alert, animated: true, completion: nil)
                 
             }
             

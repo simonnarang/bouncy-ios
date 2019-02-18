@@ -13,6 +13,9 @@
 		A078254F1F8C182B00A57A1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A078254D1F8C182B00A57A1B /* Main.storyboard */; };
 		A07825511F8C182B00A57A1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A07825501F8C182B00A57A1B /* Assets.xcassets */; };
 		A07825541F8C182B00A57A1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07825521F8C182B00A57A1B /* LaunchScreen.storyboard */; };
+		DFAAA56B221B24E100CBD38D /* Background Music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = DFAAA569221B24E000CBD38D /* Background Music.m4a */; };
+		DFAAA56C221B24E100CBD38D /* Create Ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFAAA56A221B24E100CBD38D /* Create Ball.mp3 */; };
+		DFAAA56E221B46F100CBD38D /* UserDefaults+isFirstLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAAA56D221B46F100CBD38D /* UserDefaults+isFirstLaunch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		A07825501F8C182B00A57A1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A07825531F8C182B00A57A1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A07825551F8C182B00A57A1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFAAA569221B24E000CBD38D /* Background Music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Background Music.m4a"; sourceTree = "<group>"; };
+		DFAAA56A221B24E100CBD38D /* Create Ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Create Ball.mp3"; sourceTree = "<group>"; };
+		DFAAA56D221B46F100CBD38D /* UserDefaults+isFirstLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+isFirstLaunch.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +67,11 @@
 				A078254B1F8C182B00A57A1B /* GameViewController.swift */,
 				A078254D1F8C182B00A57A1B /* Main.storyboard */,
 				A07825501F8C182B00A57A1B /* Assets.xcassets */,
+				DFAAA569221B24E000CBD38D /* Background Music.m4a */,
+				DFAAA56A221B24E100CBD38D /* Create Ball.mp3 */,
 				A07825521F8C182B00A57A1B /* LaunchScreen.storyboard */,
 				A07825551F8C182B00A57A1B /* Info.plist */,
+				DFAAA56D221B46F100CBD38D /* UserDefaults+isFirstLaunch.swift */,
 			);
 			path = Bouncy;
 			sourceTree = "<group>";
@@ -127,7 +136,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A078254F1F8C182B00A57A1B /* Main.storyboard in Resources */,
+				DFAAA56B221B24E100CBD38D /* Background Music.m4a in Resources */,
 				A07825511F8C182B00A57A1B /* Assets.xcassets in Resources */,
+				DFAAA56C221B24E100CBD38D /* Create Ball.mp3 in Resources */,
 				A07825541F8C182B00A57A1B /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFAAA56E221B46F100CBD38D /* UserDefaults+isFirstLaunch.swift in Sources */,
 				A078254A1F8C182B00A57A1B /* GameScene.swift in Sources */,
 				A078254C1F8C182B00A57A1B /* GameViewController.swift in Sources */,
 				A07825441F8C182B00A57A1B /* AppDelegate.swift in Sources */,
@@ -279,7 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 52Z55544X8;
+				DEVELOPMENT_TEAM = RNPQ279435;
 				INFOPLIST_FILE = Bouncy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simonnarang.Bouncy;
@@ -294,7 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 52Z55544X8;
+				DEVELOPMENT_TEAM = RNPQ279435;
 				INFOPLIST_FILE = Bouncy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.simonnarang.Bouncy;
